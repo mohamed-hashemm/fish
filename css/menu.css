@@ -300,7 +300,7 @@
   .nav-item .dropdown > .nav-item:hover > .nav-link {
     color: #24324b;
   }
-  .nav-item:hover > .dropdown {
+  .nav-item:hover > .dropdown ,   .nav-item:active > .dropdown {
     opacity: 1;
     visibility: visible;
     transform: translateY(0px);
@@ -469,7 +469,7 @@
     .navbar-left .nav-item .dropdown:before {
       display: none;
     }
-    .navbar-left .nav-item:hover > .dropdown {
+    .navbar-left .nav-item:hover > .dropdown , .navbar-left .nav-item:active> .dropdown  {
       opacity: 1;
       visibility: visible;
       transform: translateY(0px);
@@ -549,12 +549,14 @@
     .nav-item .dropdown:before {
       display: none;
     }
-    .nav-item:hover > .dropdown {
+    .nav-item:hover > .dropdown ,  .nav-item:active > .dropdown {
       opacity: 1;
       visibility: visible;
       transform: translateY(0px);
       max-height: initial;
     }
+
+  
   
     .nav-item.icon a:before {
       top: unset;
